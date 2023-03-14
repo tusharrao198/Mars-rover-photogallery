@@ -1,10 +1,14 @@
-package com.sic.marsroverapi;
+package com.sic.marsroverapi.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MarsPhoto {
     private Long id;
     private Integer sol;
     private MarsCamera camera;
+    @JsonProperty("img_src")
     private String imgSrc;
+    @JsonProperty("earth_date")
     private String earthDate;
     private MarsRover rover;
 

@@ -8,7 +8,6 @@
     <title>MARS ROVER API</title>
 </head>
 <body>
-    <h1 th:text="${message}"></h1>
-    <h1> AAAHELLO! A CDABA THYMELEAF</h1>
+        <img th:each="photo : ${roverData.photos}" th:src="${photo.imgSrc}"/>
 </body>
 </html>

@@ -1,8 +1,11 @@
-package com.sic.marsroverapi;
+package com.sic.marsroverapi.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MarsCamera {
     private Long id;
     private String name;
+    @JsonProperty("rover_id")
     private Long roverId;
 
     public Long getId() {
